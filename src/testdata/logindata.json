@@ -1,0 +1,16 @@
+[
+    {
+        "username": "invalid@stech.com",
+        "password": "wrong@123"
+    },
+    {
+        "username": "yuonus@stech.com",
+        "password": ""
+    },
+    {
+        "username": "sabawoon@stech.com",
+        "password": "wrong@123"
+    }
+]
+
+

@@ -1,0 +1,78 @@
+
+# ==========================================
+# Dependencies
+# ==========================================
+node_modules/
+
+# ==========================================
+# Playwright Test Artifacts & Reports
+# ==========================================
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+/reports/
+/allure-report/
+/allure-results/
+
+# ==========================================
+# Playwright Authentication State (CRITICAL: prevents leaking live session tokens)
+# ==========================================
+/playwright/.auth/
+
+# ==========================================
+# Test debugging artifacts
+# ==========================================
+playwright/.last-run.json
+*.webm
+*.zip
+
+# ==========================================
+# TypeScript build output
+# ==========================================
+dist/
+build/
+*.tsbuildinfo
+
+# ==========================================
+# Environment & Local Configuration Variables and secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# Logs
+# ==========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ==========================================
+# Coverage reports
+# ==========================================
+coverage/
+
+# ==========================================
+# IDE and editor files
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# Operating system files
+# ==========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# Temporary files
+# ==========================================
+tmp/
+temp/
+
