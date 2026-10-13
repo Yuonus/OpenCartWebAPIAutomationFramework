@@ -54,13 +54,13 @@ jobs:
         run: npx playwright install-deps chromium
 
       # reportingLabs run history: powers the Trend chart, new vs known
-      # failures, flaky dots and "got slower". One history per environment.
-      - name: Restore reportingLabs history
-        uses: actions/cache@v4
-        with:
-          path: reporting-labs.history.json
-          key: reporting-labs-history-${{ github.event.inputs.environment || 'QA' }}-${{ github.run_id }}
-          restore-keys: reporting-labs-history-${{ github.event.inputs.environment || 'QA' }}-
+      # failures, flaky dots and "got slower". One history per environment. will enable the reporting labs when use it
+      # - name: Restore reportingLabs history
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: reporting-labs.history.json
+      #     key: reporting-labs-history-${{ github.event.inputs.environment || 'QA' }}-${{ github.run_id }}
+      #     restore-keys: reporting-labs-history-${{ github.event.inputs.environment || 'QA' }}-
 
       - name: Run tests
         run: npx playwright test --project=chromium
@@ -91,10 +91,11 @@ jobs:
           path: allure-results/
           retention-days: 30
 
-      - name: Upload reportingLabs Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: reporting-labs-report-${{ github.run_id }}
-          path: reporting-labs/
-          retention-days: 30
+# Will enable the reporting lab configuration when starting using it
+      # - name: Upload reportingLabs Report
+      #   if: always()
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: reporting-labs-report-${{ github.run_id }}
+      #     path: reporting-labs/
+      #     retention-days: 30
