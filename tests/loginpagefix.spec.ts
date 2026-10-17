@@ -11,20 +11,20 @@ test.beforeEach(async ({ loginPage }) => {
     await loginPage.goToLoginPage();
 });
 
-test('Login Page title test', async ({ loginPage }) => {
+test('@smoke Login Page title test', async ({ loginPage }) => {
     // let pageTitle = await loginPage.getLoginPageTitle(); Removed 
     let pageTitle = await loginPage.getPageTitle(); // Calling the method from BasePage class
     console.log('Login page title:', pageTitle);
     expect(pageTitle).toBe('Account Login');
 });
 
-test('Forgot password link exist test', async ({ loginPage }) => {
+test('@regression Forgot password link exist test', async ({ loginPage }) => {
     // loginPage.isForgottenPwdLinkExist();
     expect(await loginPage.isForgottenPwdLinkExist()).toBeTruthy();
 
 });
 
-test('User is able to login to the application with valid credentials test', async ({ loginPage, homePage }) => {
+test('@regression User is able to login to the application with valid credentials test', async ({ loginPage, homePage }) => {
     await allure.suite("Login Tests");
     await allure.severity("Critical");
     await allure.feature("Authentication");
@@ -58,7 +58,7 @@ test('User is able to login to the application with valid credentials test', asy
 let testCSVData = CsvHelper.readCsv('src/testdata/logindata.csv');
 for (let row of testCSVData) {
     // test('User should not be able to login to the application using invaild credentials test', async ({ loginPage, homePage }) => {
-    test(`User should not be able to login to the application using invaild credentials (CSV Data) test - ${row.username} - ${row.password}`, async ({ loginPage, homePage }) => {
+    test(`@regression User should not be able to login to the application using invaild credentials (CSV Data) test - ${row.username} - ${row.password}`, async ({ loginPage, homePage }) => {
         // Supply the set of invalid data for negative testing
         await loginPage.doLogin(row.username, row.password);
         expect(await loginPage.isInvalidLoginErrorDisplayed()).toBeTruthy();
@@ -104,7 +104,7 @@ for (let row of testCSVData) {
 // Data Driven approach 3: read json data directly from the json file and loop the test method row wise. This test will run three times because we have three set of data
 let testJsonData = JsonHelper.readJson('src/testdata/logindata.json');
 for (let row of testJsonData) {
-    test(`User should not be able to login to the application using invaild credentials (Json Data) test - ${row.username} - ${row.password}`, async ({ loginPage, homePage }) => {
+    test(`@regression User should not be able to login to the application using invaild credentials (Json Data) test - ${row.username} - ${row.password}`, async ({ loginPage, homePage }) => {
         await loginPage.doLogin(row.username, row.password);
         expect(await loginPage.isInvalidLoginErrorDisplayed()).toBeTruthy();
     });
@@ -113,7 +113,7 @@ for (let row of testJsonData) {
 
 // Common Features Testing
 // The common features for login page: footers, logo, searchbox
-test('Application Logo exists on the Login Page', async ({ basePage }) => {
+test('@smoke Application Logo exists on the Login Page', async ({ basePage }) => {
     expect(await basePage.isLogoVisible()).toBeTruthy();
 });
 // To see with loginPage destructure
@@ -121,14 +121,14 @@ test('Application Logo exists on the Login Page', async ({ basePage }) => {
 //     expect(await loginPage.isLogoVisible()).toBeTruthy();
 // });
 
-test('Application Search Box exists on the Login Page', async ({ basePage }) => {
+test('@smoke Application Search Box exists on the Login Page', async ({ basePage }) => {
     expect(await basePage.isSearchBoxVisible()).toBeTruthy();
 });
 
-test('Application Cart button exists on the Login Page', async ({ basePage }) => {
+test('@smoke Application Cart button exists on the Login Page', async ({ basePage }) => {
     expect(await basePage.isCartButtonVisible()).toBeTruthy();
 });
 
-test('Application Footers exists on the Login Page', async ({ basePage }) => {
+test('@smoke Application Footers exists on the Login Page', async ({ basePage }) => {
     expect(await basePage.getPageFootersCount()).toBe(16);
 });

@@ -26,7 +26,7 @@ test.beforeEach('Generating the Token', async ({ request }) => {
 
 // As per the Booker api Documentation "Creates a new auth token to use for access to the PUT and DELETE /booking"
 // Only the PUT and DELETE Calls need it, so I will use it in those calls only
-test('Booking API CRUD Opertaion', async ({ request }) => {
+test('@regression Booking API CRUD Opertaion', async ({ request }) => {
     // First: User Creation -- POST Call
     let bookingResponse = await request.post('https://restful-booker.herokuapp.com/booking', {
         headers: { 'Content-Type': 'application/json' },

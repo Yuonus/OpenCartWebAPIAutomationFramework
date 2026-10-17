@@ -26,7 +26,7 @@ async function createUser(apiHelper: any) {
 
 // Test Case 01: Create a user test + verify --> AAA Pattern
 // Solution Flow/Chaing: POST -- Fetch UserID -- GET/UserID -- Verify
-test('Creating User Test', async ({ apiHelper }) => {
+test('@regression Creating User Test', async ({ apiHelper }) => {
     // Creating user
     let userResponse = await createUser(apiHelper); // User will be created here
     let userId = userResponse.id;
@@ -41,7 +41,7 @@ test('Creating User Test', async ({ apiHelper }) => {
 // Test Case 02: Update the user + verify --> AAA Pattern
 // Solution Flow: POST -- Fetch UserID -- GET/UserID -- Verify (Creation) -- PUT/UserID -- GET/UserID -- Verify (Updation)
 
-test('Updating User Test', async ({ apiHelper }) => {
+test('@regression Updating User Test', async ({ apiHelper }) => {
     //1. Creating user
     let userResponse = await createUser(apiHelper);
     //2. Getting user (For POST Call verification)
@@ -67,7 +67,7 @@ test('Updating User Test', async ({ apiHelper }) => {
 // Test Case 03: Delete the user + verify --> AAA Pattern
 // Solution Flow: POST -- Fetch UserID -- GET/UserID -- Verify (Creation) -- DELETE/UserID -- GET/UserID -- Verify (Deletion)
 
-test('Deleting User Test', async ({ apiHelper }) => {
+test('@regression Deleting User Test', async ({ apiHelper }) => {
     //1. Creating user
     let userResponse = await createUser(apiHelper);
     //2. Getting user (For POST Call verification)

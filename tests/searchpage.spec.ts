@@ -11,7 +11,7 @@ test.beforeEach(async ({ loginPage }) => {
 let productData = CsvHelper.readCsv('src/testdata/product.csv');
 for (let row of productData) {
 
-    test(`Verify Search Result count - ${row.searchKey} - ${row.productName}`, async ({ homePage, searchResultsPage }) => {
+    test(`@regression Verify Search Result count - ${row.searchKey} - ${row.productName}`, async ({ homePage, searchResultsPage }) => {
         await homePage.doSearch(row.searchKey);
         let actResultCount = await searchResultsPage.getProductSearchResultsCount();
         console.log('Search Results Count', actResultCount);
@@ -32,7 +32,7 @@ for (let row of productData) {
 
 // Data Provider:
 for (let row of productData) {
-    test(`Verify user is able to land on the product page - ${row.searchKey} - ${row.productName}`, async ({ homePage, searchResultsPage, page }) => {
+    test(`@smoke @regression Verify user is able to land on the product page - ${row.searchKey} - ${row.productName}`, async ({ homePage, searchResultsPage, page }) => {
         await homePage.doSearch(row.searchKey);
         await searchResultsPage.selectProduct(row.productName);
         await expect(page).toHaveTitle(row.productName);
@@ -42,18 +42,18 @@ for (let row of productData) {
 
 // Common Features Testing
 // The common features for search page: footers, logo, searchbox, cart button
-test('Application Logo exists on the Search Page', async ({ basePage }) => {
+test('@smoke Application Logo exists on the Search Page', async ({ basePage }) => {
     expect(await basePage.isLogoVisible()).toBeTruthy();
 });
 
-test('Application Search Box exists on the Search Page', async ({ basePage }) => {
+test('@smoke Application Search Box exists on the Search Page', async ({ basePage }) => {
     expect(await basePage.isSearchBoxVisible()).toBeTruthy();
 });
 
-test('Application Cart button exists on the Search Page', async ({ basePage }) => {
+test('@smoke Application Cart button exists on the Search Page', async ({ basePage }) => {
     expect(await basePage.isCartButtonVisible()).toBeTruthy();
 });
 
-test('Application Footers exists on the Search Page', async ({ basePage }) => {
+test('@smoke Application Footers exists on the Search Page', async ({ basePage }) => {
     expect(await basePage.getPageFootersCount()).toBe(16);
 });

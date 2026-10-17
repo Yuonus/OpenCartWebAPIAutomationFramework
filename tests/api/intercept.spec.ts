@@ -1,7 +1,7 @@
 // 1. Import "test" and "expect" from the Playwright Test
 import { test, expect } from '@playwright/test'
 
-test('Intercept and log requests', async ({ page }) => {
+test('@smoke Intercept and log requests', async ({ page }) => {
     page.route('**/*', async (route) => {
         // console.log(route.request().method(), route.request().url(), route.request().headers(), route.request().response());
         // To write it cleanly 
@@ -24,7 +24,7 @@ await route.fulfill(...); // Provide your own response
 await route.abort(); // Block the request
 */
 
-test('Mock search data API ', async ({ page }) => {
+test('@smoke Mock search data API ', async ({ page }) => {
 
     let fakeProducts = [
         { name: 'Fake Macbook Pro', price: '$599' },
@@ -47,7 +47,7 @@ test('Mock search data API ', async ({ page }) => {
 // fulfill() is used to fill the fake data in API Mocking
 // Use case of Mocking:
 
-test('Mock search page with fake HTML', async ({ page }) => {
+test('@smoke Mock search page with fake HTML', async ({ page }) => {
 
     await page.route('**/index.php?route=product/search&search=macbook', async (route) => {
         await route.fulfill({
@@ -88,7 +88,7 @@ test('Mock search page with fake HTML', async ({ page }) => {
 });
 
 
-test('simulate OpenCart server error', async ({ page }) => {
+test('@smoke simulate OpenCart server error', async ({ page }) => {
 
     await page.route('**/index.php**', async route => {
 

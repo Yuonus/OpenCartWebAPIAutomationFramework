@@ -24,14 +24,14 @@ let userId: number;
 test.describe.serial('Runing E2E GOREST CRUD APIs Test', () => {
 
     // GET Call: Fetch all users
-    test('GET API - Fetching all users', async ({ apiHelper }) => { // Note: Here we will use our own custom "apiHelper" fixture not the in-built "request" fixture
+    test('@smoke @regression GET API - Fetching all users', async ({ apiHelper }) => { // Note: Here we will use our own custom "apiHelper" fixture not the in-built "request" fixture
         let response = await apiHelper.get('/public/v2/users', AUTH_HEADER);
         expect(response.status).toBe(200);
         expect(response.body.length).toBeGreaterThan(0);
     });
 
     // POST Call: Create a fresh user
-    test('POST API -- Creating a new User Test', async ({ apiHelper }) => {
+    test('@regression POST API -- Creating a new User Test', async ({ apiHelper }) => {
         let uniqueEmail = `sabawoon_${Date.now()}@stech.com`;
         let userData = {
             "name": "sabawoon",
@@ -54,7 +54,7 @@ test.describe.serial('Runing E2E GOREST CRUD APIs Test', () => {
 
     // PUT Call: Update the newly created user
     // To update the user, remove the dynamic email (as discussed in the practice session) and only update the username and status.
-    test('PUT API -- Updating the User Test', async ({ apiHelper }) => {
+    test('@regression PUT API -- Updating the User Test', async ({ apiHelper }) => {
         let userData = {
             "name": "Sabawoon Automation Labs",
             "status": "inactive"
@@ -69,7 +69,7 @@ test.describe.serial('Runing E2E GOREST CRUD APIs Test', () => {
 
     // DELETE Call: Delete the newly created user
     // Delete requests do not require a body.
-    test('DELETE API -- Deleting the User Test', async ({ apiHelper }) => {
+    test('@regression DELETE API -- Deleting the User Test', async ({ apiHelper }) => {
         // Pass `undefined` as the second argument because a DELETE request does not require a payload body
         let response = await apiHelper.delete(`/public/v2/users/${userId}`, undefined, AUTH_HEADER);
         expect.soft((response).status).toBe(204);

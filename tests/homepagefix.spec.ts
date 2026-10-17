@@ -12,20 +12,20 @@ test.beforeEach(async ({ loginPage }) => {
 });
 
 
-test('Home Page Title Test', async ({ homePage }) => {
+test('@smoke Home Page Title Test', async ({ homePage }) => {
     let pageTitle = await homePage.getHomePageTitle();
     console.log('Home Page title:', pageTitle);
     expect(pageTitle).toBe('My Account');
 });
 
-test('Logout link exist Test', async ({ homePage }) => {
+test('@smoke Logout link exist Test', async ({ homePage }) => {
     let logoutPageExistence = await homePage.isLogoutLinkExist();
     expect(logoutPageExistence).toBeTruthy();
     // or you can directly verify it
     // expect(await homePage.isLogoutLinkExist()).toBeTruthy();
 });
 
-test('Home Page Headers Exist', async ({ homePage }) => {
+test('@regression Home Page Headers Exist', async ({ homePage }) => {
     let allHeaders = await homePage.getHomePageHeaders();
     console.log('Home Page Headers:', allHeaders);
     expect.soft(allHeaders).toHaveLength(4);
@@ -39,18 +39,18 @@ test('Home Page Headers Exist', async ({ homePage }) => {
 
 // Common Features Testing
 // The common features for home page: footers, logo, searchbox, cart button
-test('Application Logo exists on the Home Page', async ({ basePage }) => {
+test('@smoke Application Logo exists on the Home Page', async ({ basePage }) => {
     expect(await basePage.isLogoVisible()).toBeTruthy();
 });
 
-test('Application Search Box exists on the Home Page', async ({ basePage }) => {
+test('@smoke Application Search Box exists on the Home Page', async ({ basePage }) => {
     expect(await basePage.isSearchBoxVisible()).toBeTruthy();
 });
 
-test('Application Cart button exists on the Home Page', async ({ basePage }) => {
+test('@smoke Application Cart button exists on the Home Page', async ({ basePage }) => {
     expect(await basePage.isCartButtonVisible()).toBeTruthy();
 });
 
-test('Application Footers exists on the Home Page', async ({ basePage }) => {
+test('@smoke Application Footers exists on the Home Page', async ({ basePage }) => {
     expect(await basePage.getPageFootersCount()).toBe(16);
 });

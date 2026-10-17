@@ -52,7 +52,7 @@ let userArraySchema = {
 
 // 6. Writing the test cases
 // Flow: Create the user -- Fetch the userID -- Fetch the response body -- validate the schema
-test('Get a user -- schema Test', async ({ apiHelper }) => {
+test('@smoke Get a user -- schema Test', async ({ apiHelper }) => {
     let uniqueEmail = `sabawoon_${Date.now()}@stech.com`;
     let userData = {
         "name": "sabawoon",
@@ -83,7 +83,7 @@ test('Get a user -- schema Test', async ({ apiHelper }) => {
 });
 
 // All users schema test
-test('Get all users -- schema Test', async ({ apiHelper }) => {
+test('@smoke Get all users -- schema Test', async ({ apiHelper }) => {
     let getUsersResponse = await apiHelper.get(`/public/v2/users`, AUTH_HEADER);
     expect((getUsersResponse).status).toBe(200);
     let validateResponseBody = ajv.compile(userArraySchema);

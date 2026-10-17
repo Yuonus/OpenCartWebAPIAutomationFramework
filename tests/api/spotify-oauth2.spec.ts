@@ -38,7 +38,7 @@ test.beforeEach('POST -- Generate the Access Token', async ({ request }) => {
 });
 
 
-test('GET albums data Test', async ({ request }) => {
+test('@regression GET albums data Test', async ({ request }) => {
     // https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy
     // You can also keep both baseURL and endPointURL at ".env.qa" as we did with GOREST API.
     // Just doing it here for your better visibility
