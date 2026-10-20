@@ -1,0 +1,72 @@
+[
+  {
+    id: 8675311,
+    name: 'manish',
+    email: 'pwautomation_1792522255899@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8674950,
+    name: 'sabawoon',
+    email: 'sabawoon_1792474514617@stech.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8671696,
+    name: 'Anang Mishra',
+    email: 'anang_mishra@dickinson-miller.test',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8671695,
+    name: 'Diptendu Kaniyar',
+    email: 'kaniyar_diptendu@reilly.test',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8671694,
+    name: 'Menaka Kakkar',
+    email: 'kakkar_menaka@dicki.test',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8671693,
+    name: 'Chaanakya Tandon',
+    email: 'tandon_chaanakya@kuhic.example',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8671692,
+    name: 'Damayanti Sharma PhD',
+    email: 'damayanti_sharma_phd@schulist.test',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8671691,
+    name: 'Bhaswar Kaniyar',
+    email: 'kaniyar_bhaswar@durgan.example',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8671690,
+    name: 'Bala Varman',
+    email: 'bala_varman@oconner-jaskolski.example',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8671689,
+    name: 'Miss Adinath Tandon',
+    email: 'tandon_adinath_miss@hilll.test',
+    gender: 'male',
+    status: 'inactive'
+  }
+] 200
