@@ -173,7 +173,7 @@ jobs:
   deploy-qa:
     name: Deploy to QA
     needs: sanity-dev
-    if: contains(fromJSON('["QA","stage","Prod"]'), github.event.inputs.environment)SLACK_WEBHOOK_URL
+    if: contains(fromJSON('["QA","stage","Prod"]'), github.event.inputs.environment)
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to QA
