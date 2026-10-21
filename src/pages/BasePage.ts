@@ -40,10 +40,12 @@ export class BasePage {
     // Application common features/actions like: footer, logo, search ... etc.
 
     async isLogoVisible(): Promise<boolean> {
+        await this.logo.waitFor({ state: 'visible' });
         return await this.logo.isVisible();
     }
 
     async isSearchBoxVisible() {
+        await this.searchBox.waitFor({ state: 'visible' });
         return await this.searchBox.isVisible();
     }
 
@@ -53,20 +55,24 @@ export class BasePage {
 
     /* Page Footer relevant methods starts here */
     async getPageFooters(): Promise<string[]> {
+        await this.footerLinks.waitFor({ state: 'visible' });
         return await this.footerLinks.allInnerTexts();
     }
 
     async getPageFootersCount(): Promise<number> {
+        await this.footerLinks.first().waitFor({ state: 'visible' });
         return await this.footerLinks.count();
     }
 
     /* Page Footer relevant methods finishes here */
 
     async isCurrencyDDVisible() {
+        await this.currency.waitFor({ state: 'visible' });
         return await this.currency.isVisible();
     }
 
     async isCartButtonVisible() {
+        await this.cartButton.first().waitFor({ state: 'visible' });
         return await this.cartButton.isVisible();
     }
 
