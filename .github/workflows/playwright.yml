@@ -4,9 +4,9 @@ on:
   schedule:
     - cron: '0 1 * * 2-6'  # Mon-Fri 8:00 PM EST (during standard time)
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
     inputs:
       environment:
