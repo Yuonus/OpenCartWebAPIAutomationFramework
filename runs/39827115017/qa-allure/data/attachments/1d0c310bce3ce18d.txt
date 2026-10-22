@@ -1,0 +1,3 @@
+Auth API Response: { token: 'd2a71a09a4c0170' }
+Token --> d2a71a09a4c0170
+Booking ID: 4531
