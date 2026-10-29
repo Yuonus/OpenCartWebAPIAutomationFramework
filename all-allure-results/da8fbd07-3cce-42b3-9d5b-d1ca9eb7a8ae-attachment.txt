@@ -1,0 +1,8 @@
+[PUT CALL]
+{
+  id: 8683724,
+  name: 'Sabawoon Automation Labs',
+  email: 'sabawoon_1792773420227@stech.com',
+  gender: 'male',
+  status: 'inactive'
+} 200

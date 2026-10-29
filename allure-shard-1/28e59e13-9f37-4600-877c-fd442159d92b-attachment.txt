@@ -1,0 +1,24 @@
+API Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YWRiOGQyYTFkMzQ4NjAwMTVjNTM5ZDgiLCJpYXQiOjE3OTI3NzM0MTl9.-EZSVeIe381138MizFACQVXKE0GKm4yQDC-6L-w5gP0
+Created contact: John Smith
+Contact ID: 6adb8d2b1d34860015c539da
+Created contact: Sarah Johnson
+Contact ID: 6adb8d2b0135340015d2153b
+Created contact: Michael Brown
+Contact ID: 6adb8d2b1d34860015c539db
+Created contact: Emily Davis
+Contact ID: 6adb8d2b1d34860015c539dc
+Created contact: David Wilson
+Contact ID: 6adb8d2b0135340015d2153c
+Created contact: Jessica Miller
+Contact ID: 6adb8d2b1d34860015c539dd
+Deleted contact: John Smith
+Contact updated successfully
+==========================================
+FINAL PROJECT PASSED
+6 contacts created through API
+Contacts verified through UI
+1 contact deleted through API
+Deletion verified through UI
+1 contact updated through API
+Update verified through UI
+==========================================

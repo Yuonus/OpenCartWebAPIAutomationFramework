@@ -1,0 +1,17 @@
+[POST CALL]
+{
+  id: 8683723,
+  name: 'sabawoon',
+  email: 'sabawoon_1792773418698@stech.com',
+  gender: 'male',
+  status: 'active'
+} 201
+Generated User ID: 8683723
+[GET CALL]
+{
+  id: 8683723,
+  name: 'sabawoon',
+  email: 'sabawoon_1792773418698@stech.com',
+  gender: 'male',
+  status: 'active'
+} 200

@@ -25,6 +25,7 @@ export class HomePage extends BasePage {
         return await this.page.title();
     }
     async isLogoutLinkExist(): Promise<boolean> {
+        await this.logoutLink.waitFor({ state: 'visible' });
         return await this.logoutLink.isVisible();
     }
 

@@ -1,0 +1,9 @@
+{
+  id: 8683725,
+  name: 'sabawoon',
+  email: 'sabawoon_1792773450792@stech.com',
+  gender: 'male',
+  status: 'active'
+}
+201
+Created
