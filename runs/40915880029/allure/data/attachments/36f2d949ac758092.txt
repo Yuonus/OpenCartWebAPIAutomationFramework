@@ -1,0 +1,402 @@
+GET
+https://naveenautomationlabs.com/opencart/
+{
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-language': 'en-US',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/catalog/view/javascript/jquery/jquery-3.7.0.min.js
+{
+  accept: '*/*',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/catalog/view/javascript/bootstrap/css/bootstrap.min.css
+{
+  accept: 'text/css,*/*;q=0.1',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/catalog/view/javascript/bootstrap/js/bootstrap.min.js
+{
+  accept: '*/*',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/catalog/view/javascript/font-awesome/css/font-awesome.min.css
+{
+  accept: 'text/css,*/*;q=0.1',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700
+{
+  accept: 'text/css,*/*;q=0.1',
+  'accept-language': 'en-US',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/catalog/view/theme/default/stylesheet/stylesheet.css
+{
+  accept: 'text/css,*/*;q=0.1',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/catalog/view/javascript/jquery/swiper/css/swiper.min.css
+{
+  accept: 'text/css,*/*;q=0.1',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/catalog/view/javascript/jquery/swiper/css/opencart.css
+{
+  accept: 'text/css,*/*;q=0.1',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/catalog/view/javascript/jquery/swiper/js/swiper.jquery.min.js
+{
+  accept: '*/*',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/catalog/view/javascript/common.js
+{
+  accept: '*/*',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/catalog/opencart-logo.png
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/banners/iPhone6-1140x380.jpg
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/banners/MacBookAir-1140x380.jpg
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/macbook_1-200x200.jpg
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_1-200x200.jpg
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/apple_cinema_30-200x200.jpg
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/canon_eos_5d_1-200x200.jpg
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/manufacturer/harley-130x100.png
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/manufacturer/dell-130x100.png
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/manufacturer/disney-130x100.png
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/manufacturer/cocacola-130x100.png
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/manufacturer/burgerking-130x100.png
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/manufacturer/canon-130x100.png
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/manufacturer/nfl-130x100.png
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/manufacturer/redbull-130x100.png
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/manufacturer/sony-130x100.png
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/manufacturer/starbucks-130x100.png
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/manufacturer/nintendo-130x100.png
+{
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  referer: 'https://naveenautomationlabs.com/opencart/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2
+{
+  accept: '*/*',
+  'accept-language': 'en-US',
+  origin: 'https://naveenautomationlabs.com',
+  referer: 'https://fonts.googleapis.com/',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }
+GET
+https://naveenautomationlabs.com/opencart/catalog/view/javascript/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0
+{
+  accept: '*/*',
+  'accept-language': 'en-US',
+  cookie: 'OCSESSID=0626ca9e1d350a49d87a55128b; language=en-gb; currency=USD',
+  origin: 'https://naveenautomationlabs.com',
+  referer: 'https://naveenautomationlabs.com/opencart/catalog/view/javascript/font-awesome/css/font-awesome.min.css',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36',
+  'sec-ch-ua': '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"'
+}
+Promise { <pending> }

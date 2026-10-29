@@ -1,0 +1,112 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: api/user-api-schema.spec.ts >> @smoke Get a user -- schema Test
+- Location: tests/api/user-api-schema.spec.ts:55:1
+
+# Error details
+
+```
+SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+```
+
+# Test source
+
+```ts
+  1  | 
+  2  | import { APIRequestContext } from "@playwright/test";
+  3  | 
+  4  | export class ApiHelper {
+  5  | 
+  6  |     private readonly request: APIRequestContext;
+  7  |     private readonly baseURL: string;
+  8  | 
+  9  |     // 2: Constrcutor 
+  10 |     constructor(request: APIRequestContext, baseURL: string) {
+  11 |         this.request = request;
+  12 |         this.baseURL = baseURL;
+  13 |     }
+  14 | 
+  15 |     // Helper Methods
+  16 |     // 1: GET Call
+  17 |     async get(endPoint: string, headers?: Record<string, string>) {
+  18 |         let response = await this.request.get(`${this.baseURL}${endPoint}`, {
+  19 |             headers: headers // headers: headers (First headers is coming from Playwright and the second headers should be supplied by us)
+  20 |         });
+  21 |         // To print the body and status code (Recommendation: Do not print it, it will clutter the logs)
+  22 |         console.log('[GET CALL]');
+  23 |         console.log(await response.json(), response.status());
+  24 |         return {
+  25 |             status: response.status(),
+  26 |             body: await response.json()
+  27 |         }
+  28 |     }
+  29 | 
+  30 |     // 2: POST Call
+  31 |     async post(endPoint: string, data: object, headers: Record<string, string>) {
+  32 |         let response = await this.request.post(`${this.baseURL}${endPoint}`, {
+  33 |             headers: headers,
+  34 |             data: data
+  35 |         });
+  36 |         console.log('[POST CALL]');
+> 37 |         console.log(await response.json(), response.status());
+     |                     ^ SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+  38 |         return {
+  39 |             status: response.status(),
+  40 |             body: await response.json()
+  41 |         }
+  42 |     }
+  43 | 
+  44 |     // 3: PUT Call
+  45 |     async put(endPoint: string, data: object, headers: Record<string, string>) {
+  46 |         let response = await this.request.put(`${this.baseURL}${endPoint}`, {
+  47 |             headers: headers,
+  48 |             data: data
+  49 |         });
+  50 |         console.log('[PUT CALL]');
+  51 |         console.log(await response.json(), response.status());
+  52 |         return {
+  53 |             status: response.status(),
+  54 |             body: await response.json()
+  55 |         }
+  56 |     }
+  57 | 
+  58 |     // 4: DELETE Call
+  59 |     async delete(endPoint: string, data?: object, headers?: Record<string, string>) {
+  60 |         let response = await this.request.delete(`${this.baseURL}${endPoint}`, {
+  61 |             headers: headers,
+  62 |             data: data
+  63 |         });
+  64 |         console.log('[DELETE CALL]');
+  65 |         console.log(response.status());
+  66 |         return {
+  67 |             status: response.status(),
+  68 |         }
+  69 |     }
+  70 | 
+  71 |     /*
+  72 |         Make data optional (data?: object): Many DELETE endpoints do not expect a request body. If data is required, you will be forced to pass undefined or an empty object for standard deletions.
+  73 |         Why did you make the headers optional?
+  74 |         Because headers is a required parameter and --> A required parameter cannot follow an optional parameter.
+  75 |         Important Note: When calling the delete method without a body payload, always pass undefined as the second parameter. Because JavaScript maps arguments by position, skipping it will push your headers into the data argument, leading to a 404 error.
+  76 |         Expected: 204
+  77 |             Received: 404
+  78 | 
+  79 |             67 |     test('DELETE API -- Deleting the User Test', async ({ apiHelper }) => {
+  80 |             68 |         let response = await apiHelper.delete(`/public/v2/users/${userId}`, AUTH_HEADER);
+  81 |             69 |         expect.soft((response).status).toBe(204);
+  82 |                |                                        ^
+  83 |             70 |     });
+  84 |     */
+  85 | 
+  86 | 
+  87 | 
+  88 | }
+  89 | 
+  90 | 
+```
