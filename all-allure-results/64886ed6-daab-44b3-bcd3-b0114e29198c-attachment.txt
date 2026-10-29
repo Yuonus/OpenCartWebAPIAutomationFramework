@@ -1,3 +1,0 @@
-Auth API Response: { token: '23a4eeaf2271e74' }
-Token --> 23a4eeaf2271e74
-Booking ID: 3053
